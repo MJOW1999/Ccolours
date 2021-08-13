@@ -1,0 +1,14 @@
+div {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  gap: 0.5em;
+}
+div:hover {
+  color: white;
+  padding: 30px;
+}
+header {
+  padding: 2em;
+}
