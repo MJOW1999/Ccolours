@@ -7,23 +7,35 @@
         <link rel = "stylesheet" href = "style.css">
         <script src = "script.js" defer></script>
     </head>
-    <body>
-        <header>Hi, welcome to Ccolours. Push the button and get some random colours.</header>
+    <header>
+        <h2>Hi, welcome to Ccolours.</h2>
+        <p>Push the big red button below and get some random colours.</p>
+        <p>If you're not happy with a particular colour click on it to change it!</p>
+        <p>When you're happy with the colours, click the "Save" button to get a copy of Ccolours for yourself!</p>
+        <div id = "theme">
+            <h3>Choose Theme:</h3>
+            <label><input id="light" type="radio" name="theme" value="light" checked>Light</label>
+            <label><input id="dark" type="radio" name="theme" value="dark">Dark</label>
+        </div>
+        <button type="submit" id="newColours" class = "center"></button>
+    </header>
+    <body class = "center">
 
-        <button type="submit" id="newColours">New Colours!!</button>
-        <div id = "1">1</div>
-        <div id = "2">2</div>
-        <div id = "3">3</div>
-        <div id = "4">4</div>
-        <div id = "5">5</div>
+        <main class = "center divs stack-md width-sm">
+            <div id = "1" class = "strip">1</div>
+            <div id = "2" class = "strip">2</div>
+            <div id = "3" class = "strip">3</div>
+            <div id = "4" class = "strip">4</div>
+            <div id = "5" class = "strip">5</div>
+        </main>
 
-        <section>
+        <section class = "gap-lg center width-sm bold">
             <h2>Your colours are:</h2>
-            <p id = "colour1"></p>
-            <p id = "colour2"></p>
-            <p id = "colour3"></p>
-            <p id = "colour4"></p>
-            <p id = "colour5"></p>
+            <p id = "colour1" class = "results"></p>
+            <p id = "colour2" class = "results"></p>
+            <p id = "colour3" class = "results"></p>
+            <p id = "colour4" class = "results"></p>
+            <p id = "colour5" class = "results"></p>
         </section>
     </body>
 </html>
