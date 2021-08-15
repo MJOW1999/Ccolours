@@ -6,6 +6,7 @@
         <title>Ccolours - MJOW1999's colour generator</title>
         <link rel = "stylesheet" href = "style.css">
         <script src = "script.js" defer></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script> 
     </head>
     <header>
         <h2>Hi, welcome to Ccolours.</h2>
@@ -21,7 +22,7 @@
     </header>
     <body class = "center">
 
-        <main class = "center divs stack-md width-sm">
+        <main id = "colours" class = "center divs stack-md width-sm">
             <div id = "1" class = "strip">1</div>
             <div id = "2" class = "strip">2</div>
             <div id = "3" class = "strip">3</div>
@@ -37,5 +38,7 @@
             <p id = "colour4" class = "results"></p>
             <p id = "colour5" class = "results"></p>
         </section>
+        <button id = "save" >Save colours</button>
+        <section id = "savedColours"></section>
     </body>
 </html>
