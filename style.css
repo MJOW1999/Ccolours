@@ -45,7 +45,7 @@ button {
   gap: 0.5em;
   border-radius: 15%;
   box-shadow: 0px 3px 3px rgba(108, 160, 172, 0.5);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 #colours {
   background-color: inherit;
@@ -110,4 +110,7 @@ button {
 }
 .italic {
   font-style: italic;
+}
+u {
+  text-decoration-color: red;
 }
