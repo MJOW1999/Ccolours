@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Atkinson+Hyperlegible&display=swap");
+* {
+  text-align: center;
+}
 body {
   background-color: lightgray;
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 body.dark {
   background-color: #333333;
   color: floralwhite;
-}
-body.dark > .strip:hover {
-  color: black;
 }
 
 .strip:hover {
@@ -17,27 +19,37 @@ body.dark > .strip:hover {
 header {
   padding: 2em;
 }
-#newColours {
+button {
   padding: 1rem;
+  margin: 2em;
+}
+#newColours {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 60rem;
-
+  padding: 1.5rem;
   background-color: red;
   border-radius: 50%;
 }
-/* .divs {
-  display: flex;
-} */
+#save {
+  border-radius: 10%;
+  background-color: blanchedalmond;
+}
 .strip {
   border: 1px solid black;
   padding: 20px;
   text-align: center;
   font-weight: bold;
+  font-family: "Abel", sans-serif;
   gap: 0.5em;
-  border-radius: 5%;
+  border-radius: 15%;
+  box-shadow: 0px 3px 3px rgba(108, 160, 172, 0.5);
   transition: all 0.5s;
+}
+#colours {
+  background-color: inherit;
+  padding: 1rem;
 }
 
 /* Page Styles */

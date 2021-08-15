@@ -64,17 +64,6 @@ document.querySelectorAll('.strip').forEach((item, index) => {
 
 // Screenshot colours
 
-
-function cheese(){
-    let photo =  document.getElementById("colours");
-    html2canvas(photo).then( 
-        function (canvas) { 
-            document 
-            .getElementById('savedColours') 
-            .appendChild(canvas); 
-        }) 
-}
-
 document.getElementById('save').addEventListener('click', (e) => {
     document.getElementById("savedColours").innerHTML = '';
     download();
